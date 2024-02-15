@@ -1,0 +1,29 @@
+{
+  "name": "dadjokegrnerator",
+  "dependencies": {
+    "@huggingface/inference": "2.6.1",
+    "openai": "^4.19.0"
+  },
+  "devDependencies": {
+    "vite": "latest"
+  },
+  "scripts": {
+    "start": "vite",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "description": "Quick start:",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asmaaHamdym/Dad-Jokes-Generator.git"
+  },
+  "author": "Asma Hamdy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/asmaaHamdym/Dad-Jokes-Generator/issues"
+  },
+  "homepage": "https://github.com/asmaaHamdym/Dad-Jokes-Generator#readme"
+}
