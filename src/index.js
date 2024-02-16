@@ -61,7 +61,7 @@ function displayRandomJoke(arr) {
 }
 
 function openDoor() {
-  imageDisplayDiv.innerHTML = `<img src="./images/loading.gif" class="generatedImg" alt="" />`;
+  imageDisplayDiv.innerHTML = `<img src="https://i.ibb.co/k0PXPxY/loading.gif" class="generatedImg" alt="" />`;
 
   leftDoor.style.animation = "left-open 0.3s forwards";
   rightDoor.style.animation = "right-open 0.3s forwards";
@@ -70,7 +70,7 @@ function openDoor() {
 }
 
 function closeDoor() {
-  imageDisplayDiv.innerHTML = `<img src="./images/hello.gif" class="generatedImg" alt="" />`;
+  imageDisplayDiv.innerHTML = `<img src="../images/hello.gif" class="generatedImg" alt="Hello there" />`;
   leftDoor.style.animation = "left-close 0.3s forwards";
   rightDoor.style.animation = "right-close 0.3s forwards";
   jokeDisplaysSection.style.animation = "hide-joke 0.3s forwards";
