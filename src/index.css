@@ -22,6 +22,7 @@ body {
 }
 
 h1 {
+  width: 100%;
   margin: 80px;
   font-family: "Poppins", sans-serif;
 }
@@ -36,6 +37,10 @@ main {
 img {
   height: 450px;
   display: block;
+}
+.generatedImg {
+  width: 700px;
+  height: 500px;
 }
 
 .left-door {

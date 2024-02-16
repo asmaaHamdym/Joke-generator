@@ -1,11 +1,11 @@
 import OpenAI from "openai";
 
-const APIKey = import.meta.env.VITE_MyKey;
+const APIKey = import.meta.env.VITE_openAIKey;
 
-let leftDoor = document.querySelector(".left-door");
-let rightDoor = document.querySelector(".right-door");
-let jokeDisplaysSection = document.querySelector(".joke-display");
-let jokeDisplayHeader = document.querySelector("#joke-display");
+const leftDoor = document.querySelector(".left-door");
+const rightDoor = document.querySelector(".right-door");
+const jokeDisplaysSection = document.querySelector(".joke-display");
+const jokeDisplayHeader = document.querySelector("#joke-display");
 const imageDisplayDiv = document.querySelector(".joke-image-display");
 let jokesArray;
 
@@ -16,13 +16,14 @@ const openai = new OpenAI({
 
 async function generateImage(description) {
   const response = await openai.images.generate({
-    model: "dall-e-3",
+    model: "dall-e-2",
     prompt: description,
     n: 1,
     size: "1024x1024",
   });
-  image_url = response.data.data[0].url;
-  imageDisplayDiv.innerHTML = `<img src="${image_url}">`;
+  const image_url = response.data[0].url;
+  console.log(response.data[0].url);
+  imageDisplayDiv.innerHTML = `<img class="generatedImg" src="${image_url}">`;
 }
 async function generateJokes() {
   let message = "give me 50 unique one-line dad jokes";
