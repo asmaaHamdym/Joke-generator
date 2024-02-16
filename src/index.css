@@ -22,8 +22,6 @@ body {
 }
 
 h1 {
-  width: 100%;
-  margin: 80px;
   font-family: "Poppins", sans-serif;
 }
 
@@ -38,7 +36,16 @@ img {
   height: 450px;
   display: block;
 }
+#header {
+  width: 100%;
+}
 .generatedImg {
+  width: 700px;
+  height: 500px;
+  border: 16px solid aliceblue;
+  border-radius: 6px;
+}
+.joke-image-display {
   width: 700px;
   height: 500px;
 }

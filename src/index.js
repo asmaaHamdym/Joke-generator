@@ -17,7 +17,7 @@ const openai = new OpenAI({
 async function generateImage(description) {
   const response = await openai.images.generate({
     model: "dall-e-2",
-    prompt: description,
+    prompt: `give me a good quality image about ${description}`,
     n: 1,
     size: "1024x1024",
   });
@@ -61,6 +61,8 @@ function displayRandomJoke(arr) {
 }
 
 function openDoor() {
+  imageDisplayDiv.innerHTML = `<img src="./images/loading.gif" class="generatedImg" alt="" />`;
+
   leftDoor.style.animation = "left-open 0.3s forwards";
   rightDoor.style.animation = "right-open 0.3s forwards";
   jokeDisplaysSection.style.animation = "display-joke 0.3s forwards";
@@ -68,6 +70,7 @@ function openDoor() {
 }
 
 function closeDoor() {
+  imageDisplayDiv.innerHTML = `<img src="./images/hello.gif" class="generatedImg" alt="" />`;
   leftDoor.style.animation = "left-close 0.3s forwards";
   rightDoor.style.animation = "right-close 0.3s forwards";
   jokeDisplaysSection.style.animation = "hide-joke 0.3s forwards";
