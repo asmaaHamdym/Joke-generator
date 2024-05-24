@@ -1,42 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta charset="UTF-8" />
 
-    <title>Dad Jokes Generator</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Coiny&family=Poppins:wght@600&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8" />
 
-    <link rel="stylesheet" href="./src/index.css" />
-  </head>
+  <title>Dad Jokes Generator</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Coiny&family=Poppins:wght@600&display=swap" rel="stylesheet" />
 
-  <body>
-    <!-- <h1 id="header">Jokes for when you feel the blues</h1> -->
-    <header>
-      <div class="joke-image-display">
-        <img src="./images/hello.gif" class="generatedImg" alt="" />
-      </div>
-    </header>
-    <main id="window-container">
-      <section class="left-door">
-        <img src="https://i.ibb.co/YygdScV/left-door.png" alt="left-door" />
-      </section>
-      <section class="joke-display">
-        <h1 id="joke-display">Loading........</h1>
-      </section>
-      <section class="right-door">
-        <img src="https://i.ibb.co/98scn4T/right-door.png" alt="right-door" />
-      </section>
-    </main>
-    <script src="./src/index.js" type="module"></script>
-  </body>
+  <link rel="stylesheet" href="src/index.css" />
+</head>
+
+<body>
+  <h1 id="header">Jokes for when you feel the blues</h1>
+  <header>
+    <div class="joke-image-display">
+      <img src="./images/hello.gif" class="generatedImg" alt="" />
+    </div>
+  </header>
+  <main id="window-container">
+    <section class="left-door">
+      <img src="https://i.ibb.co/YygdScV/left-door.png" alt="left-door" />
+      <button>Show more</button>
+    </section>
+    <section class="joke-display">
+      <h1 id="joke-display">Loading........</h1>
+    </section>
+    <section class="right-door">
+      <img src="https://i.ibb.co/98scn4T/right-door.png" alt="right-door" />
+    </section>
+  </main>
+  <script src="./src/index.js" type="module"></script>
+</body>
+
 </html>

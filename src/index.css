@@ -15,6 +15,7 @@ body {
 
 body {
   background-image: url("/images/bg-1.jpeg");
+  background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   height: 100vh;
